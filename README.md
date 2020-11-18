@@ -1,1 +1,1 @@
-# Fitness Tracker Project - Week 3
+# Fitness Tracker Project
