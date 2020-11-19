@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Main from './Main'
 
 class Riddle extends React.Component {
   constructor(props) {
@@ -29,7 +30,10 @@ class Riddle extends React.Component {
           {showAnswer ? 'HIDE' : 'SHOW'} ANSWER
         </button>
         {showAnswer ? <p>🥚 AN EGG 🍳</p> : null}
+        <Main />
       </div>
     )
   }
 }
+
+ReactDOM.render(<Riddle />, document.getElementById('app'))

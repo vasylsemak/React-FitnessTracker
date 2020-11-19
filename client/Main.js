@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Imports the Robot font from Google so that we can use it within our CSS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100"
-      rel="stylesheet"
-    />
-    <!-- A favicon is a small icon that appears in a browser tab -->
-    <link rel="icon" href="favicon.ico" />
-    <!-- FontAwesome is a library of icons we can use in our UI -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <!-- Our stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Our JS script -->
-    <script defer src="bundle.js"></script>
-    <title>Fitness Tracker Pro</title>
-  </head>
+import React, { Fragment } from 'react';
 
-  <body>
-    <div id='app'></div>
-    <!-- <div id="header">
+export default () => (
+  <Fragment>
+    <div id="header">
       <h1>Fitness 🚴‍♂️ Tracker 🏃‍♀️ Pro</h1>
     </div>
     <div id="container">
@@ -53,42 +28,42 @@
         </div>
       </div>
       <div id="workouts">
-        <div class="workout">
-          <div class="workout-header">
+        <div className="workout">
+          <div className="workout-header">
             <h2>Tuesday Routine</h2>
-            <i class="fas fa-edit"></i>
+            <i className="fas fa-edit"></i>
           </div>
-          <div id="exercise-1" class="exercise-header">
-            <i class="far fa-circle"></i>
+          <div id="exercise-1" className="exercise-header">
+            <i className="far fa-circle"></i>
             <h3>Bicycling</h3>
             <span>30 min</span>
           </div>
           <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            fermentum est volutpat ultricies consequat. Class aptent taciti
+            fermentum est volutpat ultricies consequat. className aptent taciti
             sociosqu ad litora torquent per conubia nostra, per inceptos
             himenaeos.
           </div>
-          <div id="exercise-2" class="exercise-header">
-            <i class="fas fa-check-circle"></i>
+          <div id="exercise-2" className="exercise-header">
+            <i className="fas fa-check-circle"></i>
             <h3>Running</h3>
             <span>45 min</span>
           </div>
           <div>
             Praesent at ex sed diam pellentesque congue pellentesque eu felis.
-            Aliquam erat volutpat. Class aptent taciti sociosqu ad litora
+            Aliquam erat volutpat. className aptent taciti sociosqu ad litora
             torquent per conubia nostra, per inceptos himenaeos. Nunc vel orci
             laoreet, commodo quam in, dignissim purus. Nunc a lacinia eros, sed
             lobortis ipsum.
           </div>
         </div>
-        <div class="workout">
-          <div class="workout-header">
+        <div className="workout">
+          <div className="workout-header">
             <h2>Saturday Routine</h2>
-            <i class="fas fa-edit"></i>
+            <i className="fas fa-edit"></i>
           </div>
-          <div id="exercise-3" class="exercise-header">
-            <i class="fas fa-check-circle"></i>
+          <div id="exercise-3" className="exercise-header">
+            <i className="fas fa-check-circle"></i>
             <h3>Swimming</h3>
             <span>30 min</span>
           </div>
@@ -97,8 +72,8 @@
             adipiscing elit. Suspendisse sit amet mattis augue, eget interdum
             diam.
           </div>
-          <div id="exercise-4" class="exercise-header">
-            <i class="fas fa-check-circle"></i>
+          <div id="exercise-4" className="exercise-header">
+            <i className="fas fa-check-circle"></i>
             <h3>Running</h3>
             <span>20 min</span>
           </div>
@@ -111,6 +86,6 @@
           </div>
         </div>
       </div>
-    </div> -->
-  </body>
-</html>
+    </div>
+  </Fragment>
+)
