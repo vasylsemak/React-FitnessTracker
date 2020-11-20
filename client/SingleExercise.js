@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react'
 
-export default ({ id, name, completed, duration }) => (
+export default ({ id, name, completed, duration, toggleCompleted }) => (
   <Fragment>
     <div id={`exercise-${id}`} className="exercise-header">
-      <i className="far fa-circle"></i>
+      <i
+        className={completed ? "fas fa-check-circle" : "far fa-circle"}
+        onClick={() => toggleCompleted(id)}
+      ></i>
       <h3>{name}</h3>
       <span>{`${duration} min`}</span>
     </div>
