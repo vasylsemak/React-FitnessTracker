@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => (
+export default ({ exercises }) => (
   <div id="analytics">
     <div id="analytics-content">
       <div id="analytics-header">

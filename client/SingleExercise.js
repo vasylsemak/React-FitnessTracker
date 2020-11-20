@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 
-export default () => (
+export default ({ id, name, completed, duration }) => (
   <Fragment>
-    <div id="exercise-1" className="exercise-header">
+    <div id={`exercise-${id}`} className="exercise-header">
       <i className="far fa-circle"></i>
-      <h3>Bicycling</h3>
-      <span>30 min</span>
+      <h3>{name}</h3>
+      <span>{`${duration} min`}</span>
     </div>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
